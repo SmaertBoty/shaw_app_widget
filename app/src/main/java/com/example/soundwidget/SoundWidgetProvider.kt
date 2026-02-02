@@ -38,7 +38,7 @@ class SoundWidgetProvider : AppWidgetProvider() {
     override fun onReceive(context: Context, intent: Intent) {
         super.onReceive(context, intent)
         if (intent.action == "PLAY_SOUND") {
-            MediaPlayer.create(context, R.raw.click).start()
+            MediaPlayer.create(context, R.raw.shaw).start()
         }
     }
 }
