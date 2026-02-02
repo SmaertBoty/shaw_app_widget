@@ -2,6 +2,6 @@
     android:id="@+id/widget_icon"
     android:layout_width="48dp"
     android:layout_height="48dp"
-    android:src="@android:drawable/ic_media_play"
+    android:src="@drawable/hornet"
     android:contentDescription="Play sound"/>
 
