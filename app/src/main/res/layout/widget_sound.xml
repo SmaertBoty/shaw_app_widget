@@ -1,1 +1,7 @@
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_icon"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:src="@android:drawable/ic_media_play"
+    android:contentDescription="Play sound"/>
 
