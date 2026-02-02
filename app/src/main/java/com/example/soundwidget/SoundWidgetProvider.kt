@@ -1,4 +1,4 @@
-package com.example.soundwidget
+package com.smartboty.shaw
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
