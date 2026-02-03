@@ -23,12 +23,19 @@ jobs:
       - name: Grant execute permission
         run: chmod +x gradlew
 
-      - name: Build APK
-        run: ./gradlew assembleDebug
+      - name: Build APK (show everything)
+        run: |
+          echo "=== ROOT FILES ==="
+          ls -la
+          echo "=== GRADLE VERSION ==="
+          ./gradlew --version
+          echo "=== START BUILD ==="
+          ./gradlew assembleDebug --stacktrace --info
+          echo "=== LIST app/ DIRECTORY ==="
+          ls -R app || true
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: sound-widget-apk
           path: app/build/outputs/apk/debug/app-debug.apk
-
